@@ -30,6 +30,7 @@
 - **手机/平板与局域网协同**：自适应移动端 Web 交互、配对令牌安全门禁与受控只读/可写会话分享。
 
 ---
+<img width="1744" height="975" alt="33dc2fec-6b9b-4867-a137-d7b075c1698c" src="https://github.com/user-attachments/assets/23a96241-0178-4d6f-8a9a-1ad1ce1409ba" />
 
 ## 快速下载 / Downloads
 
