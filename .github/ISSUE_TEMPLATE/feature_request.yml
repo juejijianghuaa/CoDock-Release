@@ -1,0 +1,31 @@
+name: 功能建议 / Feature Request
+description: 为 CoDock 提出新功能建议或改进想法
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您为 CoDock 提出宝贵的新特性建议！
+  - type: textarea
+    id: problem
+    attributes:
+      label: 您的需求场景 / Is your feature request related to a problem?
+      description: 您遇到了什么不便，或者希望解决什么痛点？
+      placeholder: "例如：当我同时使用多个 Agent 处理大项目时..."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: 期望的解决方案 / Describe the solution you'd like
+      description: 您希望 CoDock 如何实现或呈现这一功能？
+      placeholder: "期望在界面或操作流程上..."
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 备选方案或参考 / Alternatives considered
+      description: 是否有现有的替代方案或其他工具的做法供参考？
+    validations:
+      required: false

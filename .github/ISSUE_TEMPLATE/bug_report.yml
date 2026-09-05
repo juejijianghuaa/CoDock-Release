@@ -1,0 +1,69 @@
+name: Bug 报告 / Bug Report
+description: 提交在使用 CoDock 过程中遇到的错误或异常
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您向 CoDock 提交问题反馈！请尽可能详细地填写以下信息，以帮助我们快速定位和修复问题。
+  - type: dropdown
+    id: os
+    attributes:
+      label: 操作系统 / Operating System
+      description: 您正在运行 CoDock 的系统环境
+      options:
+        - Windows 11 / Windows 10 (1809+)
+        - macOS (Apple Silicon M1/M2/M3/M4)
+        - macOS (Intel)
+        - Linux (GUI Desktop)
+        - Linux (Headless Server)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: CoDock 版本 / Version
+      description: 可在设置 -> 关于中查看（如 v0.4.2）
+      placeholder: "例如: v0.4.2"
+    validations:
+      required: true
+  - type: checkboxes
+    id: agents
+    attributes:
+      label: 涉及的 Coding Agent / Related Agents
+      options:
+        - label: Claude Code
+        - label: Codex
+        - label: Gemini CLI
+        - label: Antigravity (agy)
+        - label: Grok Build
+        - label: Pi
+        - label: Opencode
+        - label: CodeBuddy
+        - label: Cline
+        - label: 其他 / 系统终端 (Terminal)
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述 / Description
+      description: 发生了什么问题？
+      placeholder: "简要说明出现的问题及期望的行为..."
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 复现步骤 / Steps to Reproduce
+      description: 如何一步步重现该问题
+      value: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日志或控制台输出 / Logs & Screenshots
+      description: 终端回显截屏、或者 ~/.codock/app.log 中的报错片段（注意隐去个人隐私及 API Key）
+      render: shell
