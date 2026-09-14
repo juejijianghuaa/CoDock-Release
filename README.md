@@ -88,3 +88,7 @@
 - 如果您在日常使用中遇到 Bug、界面异常或终端交互问题，请前往 [**Issues -> New Issue**](https://github.com/juejijianghuaa/CoDock-Release/issues) 提交反馈。
 - 提交 Issue 时请提供您的操作系统版本、使用的 Agent 种类以及复现步骤。
 - 如果 CoDock 对您的日常 Coding 有帮助，欢迎给本仓库点一个 **Star ⭐️** 支持作者持续更新！
+## Community
+Thanks to the discussions and feedback from the LINUX DO community.
+
+https://linux.do
