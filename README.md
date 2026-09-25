@@ -10,8 +10,8 @@
 [![License](https://img.shields.io/badge/License-MIT-orange.svg)](https://github.com/juejijianghuaa/CoDock-Release/blob/main/LICENSE)
 
 <p align="center">
-  <b>一个界面，聚合 9+ 个主流 Coding Agent</b><br/>
-  Claude Code · Codex · Gemini CLI · Antigravity (agy) · Grok · Pi · Opencode · CodeBuddy · Cline
+  <b>一个界面，聚合 12 个主流 Coding Agent</b><br/>
+  Claude Code · Codex · Gemini CLI · Antigravity (agy) · Grok · Pi · Opencode · CodeBuddy · Cline · Qoder · DeepSeek Harness (dsh) · Kimi Code (kimi)
 </p>
 
 [下载最新版本 (Releases)](https://github.com/juejijianghuaa/CoDock-Release/releases/latest) • [提交 Bug / 需求反馈](https://github.com/juejijianghuaa/CoDock-Release/issues)
@@ -23,7 +23,9 @@
 ## 什么是 CoDock？ / What is CoDock?
 
 **CoDock** 是一个面向专业开发者的本地 Coding Agent 桌面工作台与终端控制台：
-- **多 Agent 并行执行**：支持在一个窗口内多 Tab 运行 Claude Code、Codex、Gemini CLI、Antigravity、Grok Build、Pi、Opencode 等，告别杂乱的独立黑窗口。
+- **多 Agent 并行执行**：支持在一个窗口内多 Tab 运行 Claude Code、Codex、Gemini CLI、Antigravity (agy)、Grok、Pi、Opencode、CodeBuddy、Cline、Qoder、Dsh、Kimi Code 等 12 家主流 Agent，告别杂乱的独立黑窗口。
+- **独立 Git Worktree 任务并行**：在仓库旁一键开辟独立 worktree 与分支跑任务，多个会话互不踩未提交改动与 build 产物。
+- **会话正文全文搜索与记录浏览**：内置 SQLite FTS5 全文索引，直接索引所有历史对话正文与代码片段，毫秒级检索定位消息锚点；会话记录支持整篇翻阅，工具调用与返回结果可单独折叠展开，支持会话内二次搜索。
 - **全历史与用量看板**：本地直接解析各 Agent 的原生日志与 SQLite/JSONL 数据，聚合按项目、模型、日期的 Token 用量与成本统计。
 - **专为 Coding 打造的终端增强**：基于 xterm.js 与原生 ConPTY 封装，支持滚轮穿透、图片快速粘贴、拖拽文件注入绝对路径、全局快捷键呼出。
 - **Markdown Composer 独立浮窗**：专为长提示词编写设计的全功能 Markdown 输入层，支持模板复用、提示词优化与一键投递。
@@ -83,3 +85,10 @@
 - 如果您在日常使用中遇到 Bug、界面异常或终端交互问题，请前往 [**Issues -> New Issue**](https://github.com/juejijianghuaa/CoDock-Release/issues) 提交反馈。
 - 提交 Issue 时请提供您的操作系统版本、使用的 Agent 种类以及复现步骤。
 - 如果 CoDock 对您的日常 Coding 有帮助，欢迎给本仓库点一个 **Star ⭐️** 支持作者持续更新！
+
+---
+
+## 致谢与参考 / Acknowledgements
+
+- 会话正文全文搜索与各 Coding Agent 消息投影（Transcript）的设计与部分解析逻辑参考了开源项目 [Wake](https://github.com/juejijianghuaa/Wake)。特此致谢！
+
