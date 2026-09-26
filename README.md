@@ -24,6 +24,8 @@
 
 **CoDock** 是一个面向专业开发者的本地 Coding Agent 桌面工作台与终端控制台：
 - **多 Agent 并行执行**：支持在一个窗口内多 Tab 运行 Claude Code、Codex、Gemini CLI、Antigravity (agy)、Grok、Pi、Opencode、CodeBuddy、Cline、Qoder、Dsh、Kimi Code 等 12 家主流 Agent，告别杂乱的独立黑窗口。
+- **跨会话接力（Session Continuity Relay）**：历史会话一键提取前序任务目标、改动文件和最终结论，生成结构化 Prompt，自由换用新 Agent 无缝接力推进（彻底解决“额度用尽或换个 Agent 接着干”的断层痛点）。
+- **内置 CoDock MCP 服务（跨 Agent 历史感知与同伴协同）**：单端点 Streamable HTTP (`http://localhost:9527/mcp`) 与 stdio 模式，支持外部 Agent 跨端检索 CoDock 历史、调阅完整会话记录、以及感知并读取正在运行的同伴 Tab 终端输出。
 - **独立 Git Worktree 任务并行**：在仓库旁一键开辟独立 worktree 与分支跑任务，多个会话互不踩未提交改动与 build 产物。
 - **会话正文全文搜索与记录浏览**：内置 SQLite FTS5 全文索引，直接索引所有历史对话正文与代码片段，毫秒级检索定位消息锚点；会话记录支持整篇翻阅，工具调用与返回结果可单独折叠展开，支持会话内二次搜索。
 - **全历史与用量看板**：本地直接解析各 Agent 的原生日志与 SQLite/JSONL 数据，聚合按项目、模型、日期的 Token 用量与成本统计。
@@ -33,7 +35,7 @@
 
 ---
 <img width="1744" height="975" alt="33dc2fec-6b9b-4867-a137-d7b075c1698c" src="https://github.com/user-attachments/assets/23a96241-0178-4d6f-8a9a-1ad1ce1409ba" />
-<img width="672" height="606" alt="image" src="https://github.com/user-attachments/assets/a4a57c54-08e4-40bc-8d39-c89415f3922f" />
+<img width="672" height="606" alt="image" src="https://github.com/user-attachments/assets/a4a57c54-08e4-40bc-8d39-c89415f3922f" /><img width="672" height="672" alt="跨会话接力 - 自动提炼目标、改动文件与结论无缝接力" src="assets/relay.png" />
 
 <img width="674" height="612" alt="image" src="https://github.com/user-attachments/assets/1aa90411-2970-4b2b-a087-34c5c331ba17" /><img width="670" height="603" alt="image" src="https://github.com/user-attachments/assets/b6257210-40c0-463c-ab8a-c888d0e51ec1" />
 
@@ -95,5 +97,5 @@
 
 ## 致谢与参考 / Acknowledgements
 
-- 会话正文全文搜索与各 Coding Agent 消息投影（Transcript）的设计与部分解析逻辑参考了开源项目 [Wake](https://github.com/juejijianghuaa/Wake)。特此致谢！
+- 会话正文全文搜索、各 Coding Agent 消息投影（Transcript）与跨会话接力（Session Continuity）的设计与部分灵感参考了开源项目 [Wake](https://github.com/juejijianghuaa/Wake)。特此致谢！
 
