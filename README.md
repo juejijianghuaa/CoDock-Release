@@ -34,6 +34,9 @@
 - **手机/平板与局域网双模协同**：支持在**原生对话流（Chat View）**与**字符终端**之间无缝一键切换。Agent 发起的单选/多选/自定义输入交互式问答自动转为原生卡片、轻触勾选提交；支持手机相册图片与本地文件直传，实时展示会话 Token 消耗与成本。
 
 ---
+<img width="525" height="835" alt="image" src="https://github.com/user-attachments/assets/090a3871-cc62-409b-b63b-0b8175bc63ba" />
+<img width="525" height="835" alt="image" src="https://github.com/user-attachments/assets/cedbddbd-455c-4a73-9eec-532becdb568d" />
+
 <img width="1744" height="975" alt="33dc2fec-6b9b-4867-a137-d7b075c1698c" src="https://github.com/user-attachments/assets/23a96241-0178-4d6f-8a9a-1ad1ce1409ba" />
 <img width="672" height="606" alt="image" src="https://github.com/user-attachments/assets/a4a57c54-08e4-40bc-8d39-c89415f3922f" /><img width="672" height="608" alt="跨会话接力 - 自动提炼目标、改动文件与结论无缝接力" src="assets/relay.png" />
 
