@@ -26,8 +26,9 @@
 - **多 Agent 并行执行**：支持在一个窗口内多 Tab 运行 Claude Code、Codex、Gemini CLI、Antigravity (agy)、Grok、Pi、Opencode、CodeBuddy、Cline、Qoder、Dsh、Kimi Code 等 12 家主流 Agent，告别杂乱的独立黑窗口。
 - **跨会话接力（Session Continuity Relay）**：历史会话一键提取前序任务目标、改动文件和最终结论，生成结构化 Prompt，自由换用新 Agent 无缝接力推进（彻底解决“额度用尽或换个 Agent 接着干”的断层痛点）。
 - **内置 CoDock MCP 服务（跨 Agent 历史感知与同伴协同）**：单端点 Streamable HTTP (`http://localhost:9527/mcp`) 与 stdio 模式，支持外部 Agent 跨端检索 CoDock 历史、调阅完整会话记录、以及感知并读取正在运行的同伴 Tab 终端输出。
-- **独立 Git Worktree 任务并行**：在仓库旁一键开辟独立 worktree 与分支跑任务，多个会话互不踩未提交改动与 build 产物。
-- **会话正文全文搜索与记录浏览**：内置 SQLite FTS5 全文索引，直接索引所有历史对话正文与代码片段，毫秒级检索定位消息锚点；会话记录支持整篇翻阅，工具调用与返回结果可单独折叠展开，支持会话内二次搜索。
+- **独立 Git Worktree 任务并行**：在仓库旁一键开辟独立 worktree 与分支跑任务，多个会话互不踩未提交改动与 build 产物；起点分支可自选（支持搜索、本地/远程分组与一键拉取），远程分支只当起点、不会被 checkout。
+- **会话正文全文搜索与记录浏览**：内置 SQLite FTS5 全文索引，直接索引所有历史对话正文与代码片段，毫秒级检索定位消息锚点；会话记录支持整篇翻阅，工具调用、返回结果与模型的思考过程可分别折叠展开，支持会话内二次搜索。
+- **整篇导出为 Markdown**：整场会话可导出成一份 Markdown。「阅读版」只保留你和助手的正文，思考与工具调用一律剥掉，直接可读；「完整版」保留思考与工具调用的折叠块。
 - **全历史与用量看板**：本地直接解析各 Agent 的原生日志与 SQLite/JSONL 数据，聚合按项目、模型、日期的 Token 用量与成本统计。
 - **专为 Coding 打造的终端增强**：基于 xterm.js 与原生 ConPTY 封装，支持滚轮穿透、图片快速粘贴、拖拽文件注入绝对路径、全局快捷键呼出。
 - **Markdown Composer 独立浮窗**：专为长提示词编写设计的全功能 Markdown 输入层，支持模板复用、提示词优化与一键投递。
