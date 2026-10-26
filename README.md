@@ -12,8 +12,6 @@
   Claude Code · Codex · Gemini CLI · Antigravity (agy) · Grok · Pi · Opencode · CodeBuddy · Cline · Qoder · DeepSeek Harness (dsh) · Kimi Code (kimi)
 </p>
 <img width="2304" height="1237" alt="ScreenShot_2026-10-26_174836_700@2x" src="https://github.com/user-attachments/assets/28f81372-677d-42d8-92e3-c00f5c2f3598" />
-[下载最新版本 (Releases)](https://github.com/juejijianghuaa/CoDock-Release/releases/latest) • [提交 Bug / 需求反馈](https://github.com/juejijianghuaa/CoDock-Release/issues)
-
 </div>
 
 ---
