@@ -4,8 +4,6 @@
 
 ### 本地 Coding Agent 桌面工作台与终端集成中心
 ### Local Coding Agent Workbench & Unified Terminal Dock
-<img width="2304" height="1237" alt="ScreenShot_2026-10-26_174836_700@2x" src="https://github.com/user-attachments/assets/28f81372-677d-42d8-92e3-c00f5c2f3598" />
-
 [![Release](https://img.shields.io/github/v/release/juejijianghuaa/CoDock-Release?color=blue&logo=github)](https://github.com/juejijianghuaa/CoDock-Release/releases)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-brightgreen)](https://github.com/juejijianghuaa/CoDock-Release/releases)
 
@@ -13,7 +11,7 @@
   <b>一个界面，聚合 12 个主流 Coding Agent</b><br/>
   Claude Code · Codex · Gemini CLI · Antigravity (agy) · Grok · Pi · Opencode · CodeBuddy · Cline · Qoder · DeepSeek Harness (dsh) · Kimi Code (kimi)
 </p>
-
+<img width="2304" height="1237" alt="ScreenShot_2026-10-26_174836_700@2x" src="https://github.com/user-attachments/assets/28f81372-677d-42d8-92e3-c00f5c2f3598" />
 [下载最新版本 (Releases)](https://github.com/juejijianghuaa/CoDock-Release/releases/latest) • [提交 Bug / 需求反馈](https://github.com/juejijianghuaa/CoDock-Release/issues)
 
 </div>
