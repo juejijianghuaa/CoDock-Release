@@ -4,11 +4,10 @@
 
 ### 本地 Coding Agent 桌面工作台与终端集成中心
 ### Local Coding Agent Workbench & Unified Terminal Dock
-
+<img width="2304" height="1237" alt="ScreenShot_2026-10-26_174836_700@2x" src="https://github.com/user-attachments/assets/28f81372-677d-42d8-92e3-c00f5c2f3598" />
 
 [![Release](https://img.shields.io/github/v/release/juejijianghuaa/CoDock-Release?color=blue&logo=github)](https://github.com/juejijianghuaa/CoDock-Release/releases)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-brightgreen)](https://github.com/juejijianghuaa/CoDock-Release/releases)
-[![License](https://img.shields.io/badge/License-MIT-orange.svg)](https://github.com/juejijianghuaa/CoDock-Release/blob/main/LICENSE)
 
 <p align="center">
   <b>一个界面，聚合 12 个主流 Coding Agent</b><br/>
