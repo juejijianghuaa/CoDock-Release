@@ -97,5 +97,5 @@
 
 ## 致谢与参考 / Acknowledgements
 
-- 会话正文全文搜索、各 Coding Agent 消息投影（Transcript）与跨会话接力（Session Continuity）的设计与部分灵感参考了开源项目 [Wake](https://github.com/juejijianghuaa/Wake)。特此致谢！
+- 会话正文全文搜索、各 Coding Agent 消息投影（Transcript）与跨会话接力（Session Continuity）的设计与部分灵感参考了开源项目 [Wake](https://github.com/iAmCorey/Wake)。特此致谢！
 
