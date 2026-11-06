@@ -27,6 +27,10 @@
 - **整篇导出为 Markdown**：整场会话可导出成一份 Markdown。「阅读版」只保留你和助手的正文，思考与工具调用一律剥掉，直接可读；「完整版」保留思考与工具调用的折叠块。
 - **全历史与用量看板**：本地直接解析各 Agent 的原生日志与 SQLite/JSONL 数据，聚合按项目、模型、日期的 Token 用量与成本统计。
 - **专为 Coding 打造的终端增强**：基于 xterm.js 与原生 ConPTY 封装，支持滚轮穿透、图片快速粘贴、拖拽文件注入绝对路径、全局快捷键呼出。
+- **WebGL 终端渲染**：终端改用 WebGL 绘制，中文表格边框不再逐行错位；浏览器不支持或上下文被回收时自动退回 DOM，不黑屏。
+- **终端里的文件直达**：终端里出现的文件路径可以直接点开或下载——主机本机用编辑器打开，已配对设备在浏览器里点开或下载，分享页访客只能点会话回放里出现过的文件（仅普通文件、50MB 上限）。
+- **可拖动的侧栏**：侧栏宽度 250–640px 任意拖动，双击恢复默认；会话多的项目默认只露 5 条，「显示更多」每次 +10，当前会话始终在视野里。
+- **Server 版开机后台运行**：无窗口构建可在「设置 → 系统集成」里登记为登录项，登录后自动在后台起服务，直接用浏览器访问。
 - **Markdown Composer 独立浮窗**：专为长提示词编写设计的全功能 Markdown 输入层，支持模板复用、提示词优化与一键投递。
 - **手机/平板与局域网双模协同**：支持在**原生对话流（Chat View）**与**字符终端**之间无缝一键切换。Agent 发起的单选/多选/自定义输入交互式问答自动转为原生卡片、轻触勾选提交；支持手机相册图片与本地文件直传，实时展示会话 Token 消耗与成本。
 
@@ -51,6 +55,18 @@
 | **macOS (Intel)** | [**codock-mac-amd64.dmg**](https://github.com/juejijianghuaa/CoDock-Release/releases/latest) *(适用于 Intel 处理器 Mac)* | 打开 dmg 拖入 Applications |
 | **Linux (x64)** | [**codock-linux-amd64**](https://github.com/juejijianghuaa/CoDock-Release/releases/latest) *(独立二进制)* | `chmod +x codock-linux-amd64` |
 
+### 下载 Server 版（无窗口，浏览器访问）
+
+| 平台 | 架构 | 发行文件 |
+| :--- | :--- | :--- |
+| **macOS** | Apple Silicon | `codock-server-mac-arm64` |
+| **macOS** | Intel | `codock-server-mac-amd64` |
+| **Linux** | x64 | `codock-server-linux-amd64` |
+| **Linux** | arm64 | `codock-server-linux-arm64` |
+| **Windows** | x64 | `codock-server-windows-amd64.exe` |
+
+Server 版不打开窗口，启动后默认监听 `:9527`，用浏览器访问即可；与桌面版共用同一套功能与数据。
+
 ---
 
 ## 安装与运行指引 / Installation & Tips
@@ -71,7 +87,7 @@
 
 ### Linux
 1. GUI 桌面版运行需要系统具备 `libwebkit2gtk-4.0` 运行环境（Ubuntu/Debian 执行 `sudo apt install libwebkit2gtk-4.0-37`）。
-2. 如需在无 GUI 的远程服务器运行，可使用 `--tags nogui` 构建的 Server 模式：
+2. 如需在无 GUI 的远程服务器运行，直接从 Release 下载 `codock-server-linux-amd64`（或从源码用 `--tags nogui` 构建）：
    ```bash
    ./codock-server -addr :9527
    ```
