@@ -18,6 +18,10 @@
 
 ## 什么是 CoDock？ / What is CoDock?
 
+
+https://github.com/user-attachments/assets/5a99409f-7baf-4bfc-9b05-f8c9738e621e
+
+
 **CoDock** 是一个面向专业开发者的本地 Coding Agent 桌面工作台与终端控制台：
 - **多 Agent 并行执行**：支持在一个窗口内多 Tab 运行 Claude Code、Codex、Gemini CLI、Antigravity (agy)、Grok、Pi、Opencode、CodeBuddy、Cline、Qoder、Dsh、Kimi Code 等 12 家主流 Agent，告别杂乱的独立黑窗口。
 - **跨会话接力（Session Continuity Relay）**：历史会话一键提取前序任务目标、改动文件和最终结论，生成结构化 Prompt，自由换用新 Agent 无缝接力推进（彻底解决“额度用尽或换个 Agent 接着干”的断层痛点）。
