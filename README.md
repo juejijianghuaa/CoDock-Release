@@ -52,6 +52,17 @@ https://github.com/user-attachments/assets/5a99409f-7baf-4bfc-9b05-f8c9738e621e
 
 ### 下载 Server 版（无窗口，浏览器访问）
 
+已装 Node.js（16+）的话，可以直接用 npm 安装，只下载本平台的二进制：
+
+```bash
+npm i -g codock   # 安装后运行 codock
+npx codock        # 或者不安装，直接运行一次
+```
+
+国内可加 `--registry=https://registry.npmmirror.com`；升级用 `npm i -g codock@latest`。npm 版在 Windows 上是控制台程序：日志直接打印在终端里，Ctrl+C 即停止。
+
+也可以从 Release 下载单文件：
+
 | 平台 | 架构 | 发行文件 |
 | :--- | :--- | :--- |
 | **macOS** | Apple Silicon | `codock-server-mac-arm64` |
